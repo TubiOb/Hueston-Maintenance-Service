@@ -23,9 +23,9 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="current"><a href="about.html">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li class="current"><a href="login.html">Login</a></li>
                 </ul>
             </nav>
             <div id="searching">
@@ -34,19 +34,37 @@
         </div>
     </header>
 
-    <section id="about">
-        <div class="container5">
-            <h3>About Our Company</h3>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam hic eligendi esse ea doloremque dolorem molestias velit a nesciunt? Distinctio consequatur nihil ab nulla iure ex,<span class="dots">...</span><span class="more"> laborum error at alias placeat pariatur vitae saepe ea necessitatibus facilis libero esse dolorem. Officiis corporis unde odit deserunt qui aperiam quod pariatur autem beatae, velit iste, quam magni amet quia tempore?
-                Repellendus, fugit placeat. Sit ullam quas nam a, repudiandae nulla dolorem recusandae.</span>
-            </p>
-            <div class="image">
-                <img src="img/26876939_Frustrated female person and team of plumbers in bathroom.jpg" alt="">
-            </div>
-            <button onclick="myFunction()" class="myBtn">Read More</button>
+    <section id="login-signup">
+        <div class="login-image">
+            <img src="img/27399448_plumber_04.jpg" alt="">
         </div>
-        <h3>What We Do</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore vel exercitationem inventore ducimus, velit eligendi.</p>
+
+        <div id="login">
+            <h3>Login</h3>
+            <form action="url" method="post" autocomplete="on" target="_blank" id="login-form">
+                <input type="text" id="username" name="username" placeholder="USERNAME" required><br>
+                <input type="password" id="password" name="password" placeholder="PASSWORD" required><br><br>
+                <button type="submit">Submit</button><br>
+                <div id="sign">
+                    <a href="#" id="login-link">forgot password?</a>
+                    <a href="#" id="signup-link">Sign Up</a>
+                </div>
+            </form>
+        </div>
+        <div id="signup">
+            <h3>Sign Up</h3>
+            <form action="url" method="post" autocomplete="on" target="_blank" id="signup-form">
+                <input type="text" id="username" name="username" placeholder="USERNAME" required><br>
+                <input type="email" id="email" name="email" placeholder="EMAIL" required><br>
+                <input type="password" id="password" name="password" placeholder="PASSWORD" required><br><br>
+                <button type="submit">Sign Up</button>
+                <div id="log">
+                    <a href="#" id="login-link">Already have an account?</a>
+                    <a href="#" id="login-link" style="display: none;">Login</a>
+
+                </div>
+            </form>
+        </div>
     </section>
 
     <section id="newsletter">
@@ -57,23 +75,6 @@
                 <button type="submit" class="button_1">Subscribe</button>
             </form>
         </div>
-    </section>
-
-    <section id="booking">
-        <h3>BOOKING ONLINE</h3>
-        <form action="url" method="post" autocomplete="on" target="_blank">
-            <input type="text" id="name" name="name" placeholder="YOUR NAME" required><br>
-            <input type="email" id="email" name="email" placeholder="YOUR EMAIL" required><br>
-            <input type="tel" id="phone" name="phone" placeholder="YOUR PHONE NUMBER" required style="color: black;"><br>
-            <select id="service" name="service" required>
-                <option value="" selected disabled hidden>TYPE OF SERVICE</option>
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-            </select><br>
-            <textarea id="message" name="message" placeholder="ENTER YOUR MESSAGE HERE" required></textarea><br>
-            <button type="submit">Send</button><br>
-        </form>
     </section>
 
     <footer>
@@ -92,7 +93,7 @@
                     <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
-            <div class="small">
+            <div class="small" id="cont">
                 <h3>CONTACT INFO</h3>
                 <span>Corperate Office Address:</span>
                 <p>Balogun Street, Ikeja.</p>
