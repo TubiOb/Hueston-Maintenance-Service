@@ -17,37 +17,19 @@ function myFunction() {
     }
 }
 
-
-
 // ADDING FUNCTIONALITY TO THE SEARCH ICON
-const searchButton = document.getElementById('search-button');
-
-searchButton.addEventListener('click', function() {
-    const searchQuery = window.prompt('Enter a search query:');
-
-    processSearch(searchQuery);
-});
 
 
 
 //LOGIN AND SIGNUP FORM TOGGLE
-const signupForm = document.getElementById('signup-form');
-const loginForm = document.getElementById('login-form');
-const signupLink = document.getElementById('signup-link');
-const loginLink = document.getElementById('login-link');
+const signUpButton = document.getElementById('signUpButton');
+const signInButton = document.getElementById('signInButton');
+const container = document.getElementById('container');
 
-signupLink.addEventListener('click', function(event) {
-    event.preventDefault(); // prevent the page from reloading
-    signupForm.style.display = "block";
-    loginForm.style.display = "none";
-    signupLink.style.display = "none";
-    loginLink.style.display = "inline";
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
 });
 
-loginLink.addEventListener('click', function(event) {
-    event.preventDefault(); // prevent the page from reloading
-    loginForm.style.display = "block";
-    signupForm.style.display = "none";
-    loginLink.style.display = "none";
-    signupLink.style.display = "inline";
+signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
 });
