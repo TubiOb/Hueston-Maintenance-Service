@@ -54,7 +54,7 @@ header a {
 header li {
     float: left;
     display: inline;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 header #branding {
@@ -336,7 +336,7 @@ aside#sidebar .side h1>span {
 .container3 {
     width: 100%;
     overflow: hidden;
-    display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
     justify-items: center;
     align-content: space-around;
@@ -344,10 +344,12 @@ aside#sidebar .side h1>span {
     color: white;
     background-color: #f94144;
     margin-top: 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .container3 .small {
-    width: 300px;
+    width: 250px;
     height: 250px;
     margin-left: 20px;
     position: relative;
@@ -361,7 +363,7 @@ aside#sidebar .side h1>span {
 }
 
 .container3 .small>p {
-    margin: 5px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -662,20 +664,20 @@ aside#sidebar .side h1>span {
 }
 
 .overlay-left {
-    transform: translateX(-50%);
+    transform: translateX(-20%);
 }
 
 #container.right-panel-active .overlay-left {
-    transform: translateX(0);
+    transform: translateX(-20px);
 }
 
 .overlay-right {
     right: 0;
-    transform: translateX(0);
+    transform: translateX(30px);
 }
 
 #container.right-panel-active .overlay-right {
-    transform: translateX(20%);
+    transform: translateX(50px);
 }
 
 .social-container {
@@ -693,7 +695,7 @@ aside#sidebar .side h1>span {
     width: 40px;
 }
 
-@media(max-width:700px) {
+@media(max-width:760px) {
     .container #branding,
     .container nav,
     .container nav li,
@@ -708,7 +710,11 @@ aside#sidebar .side h1>span {
         text-align: center;
         width: 100%;
     }
-    .container {
+    .container nav,
+    .container nav li {
+        width: auto;
+    }
+    header {
         padding-bottom: 20px;
     }
     .container3,
@@ -725,7 +731,8 @@ aside#sidebar .side h1>span {
         width: 100%;
     }
     .container3 .small {
-        margin: auto;
+        margin-left: auto;
+        margin-bottom: -80px;
     }
     #newsletter form input[type="email"] {
         width: 100%;
@@ -733,6 +740,7 @@ aside#sidebar .side h1>span {
     }
     #container h1 {
         font-size: 16px;
+        margin: 10px;
     }
     #container p,
     #container a,
