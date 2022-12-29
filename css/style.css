@@ -76,28 +76,6 @@ header nav {
     align-items: center;
 }
 
-header #searching {
-    display: flex;
-    float: right;
-    align-items: center;
-    margin-left: auto;
-    padding: 0;
-}
-
-header #searching #search-button {
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    margin-top: -22px;
-    background-color: black;
-    color: white;
-}
-
-header #searching #search-button:hover {
-    cursor: pointer;
-}
-
 header .highlight,
 header .current a {
     color: #f94144;
@@ -493,10 +471,6 @@ aside#sidebar .side h1>span {
     margin: 0;
 }
 
-#container h2 {
-    text-align: center;
-}
-
 #container p {
     font-size: 13px;
     /* font-weight: 100; */
@@ -555,7 +529,7 @@ aside#sidebar .side h1>span {
     text-align: center;
 }
 
-#container input {
+#container form input {
     background-color: #eee;
     border: none;
     padding: 12px 15px;
@@ -701,4 +675,46 @@ aside#sidebar .side h1>span {
     margin: 0 5px;
     height: 40px;
     width: 40px;
+}
+
+@media(max-width:700px) {
+    .container #branding,
+    .container nav,
+    .container nav li,
+    .container3 .small,
+    #newsletter h1,
+    #newsletter p,
+    #newsletter form {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .container {
+        padding-bottom: 20px;
+    }
+    .container3 {
+        flex-direction: column;
+    }
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #container h1 {
+        font-size: 16px;
+    }
+    #container p,
+    #container a,
+    #container span,
+    #container form input,
+    #container button {
+        font-size: 11px;
+    }
+    #container button {
+        width: 90px;
+        padding: 8px;
+    }
 }

@@ -17,9 +17,6 @@ function myFunction() {
     }
 }
 
-// ADDING FUNCTIONALITY TO THE SEARCH ICON
-
-
 
 //LOGIN AND SIGNUP FORM TOGGLE
 const signUpButton = document.getElementById('signUpButton');
