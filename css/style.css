@@ -336,7 +336,6 @@ aside#sidebar .side h1>span {
 .container3 {
     width: 100%;
     overflow: hidden;
-    /* text-align: center; */
     display: inline-flex;
     justify-content: space-evenly;
     justify-items: center;
@@ -429,7 +428,6 @@ aside#sidebar .side h1>span {
 
 .image img {
     width: 100%;
-    /* margin: auto; */
 }
 
 #products {
@@ -494,9 +492,6 @@ aside#sidebar .side h1>span {
 
 #container p {
     font-size: 13px;
-    /* font-weight: 100; */
-    /* line-height: 20px; */
-    /* letter-spacing: 0.1px; */
     margin: 30px 30px 30px 40px;
 }
 
@@ -721,6 +716,7 @@ aside#sidebar .side h1>span {
         flex-direction: column;
     }
     #Ourservices .container2 .box {
+        width: 80%;
         margin-bottom: 10px;
         margin-top: 10px;
     }
@@ -747,11 +743,26 @@ aside#sidebar .side h1>span {
     #section2,
     #section3,
     #section4,
+    #section1 button,
+    #section2 button,
+    #section3 button,
+    #section4 button,
+    .myBtn,
+    .box button,
     #Ourservices .container2 .box {
         font-size: 11px;
     }
-    #container button {
+    #container button,
+    .myBtn,
+    .box button {
         width: 90px;
         padding: 8px;
+    }
+    #section1 button,
+    #section2 button,
+    #section3 button,
+    #section4 button {
+        width: 70px;
+        padding: 5px;
     }
 }
