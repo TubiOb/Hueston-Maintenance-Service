@@ -358,6 +358,11 @@ aside#sidebar .side h1>span {
     /* box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3); */
 }
 
+.container3 .small li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 .container3 .small>span {
     color: black;
 }
@@ -564,7 +569,7 @@ aside#sidebar .side h1>span {
     overflow: hidden;
     width: 100%;
     max-width: 80%;
-    min-height: 480px;
+    height: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -617,6 +622,7 @@ aside#sidebar .side h1>span {
     position: absolute;
     top: 0;
     left: 50%;
+    right: 50%;
     width: 60%;
     height: 100%;
     overflow: hidden;
@@ -642,6 +648,10 @@ aside#sidebar .side h1>span {
     width: 200%;
     transform: translateX(0);
     transition: transform 0.6s ease-in-out;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
 }
 
 #container.right-panel-active .overlay {
@@ -664,20 +674,20 @@ aside#sidebar .side h1>span {
 }
 
 .overlay-left {
-    transform: translateX(-20%);
+    transform: translateX(-30%);
 }
 
 #container.right-panel-active .overlay-left {
-    transform: translateX(-20px);
+    transform: translateX(-17px);
 }
 
 .overlay-right {
     right: 0;
-    transform: translateX(30px);
+    transform: translateX(10%);
 }
 
 #container.right-panel-active .overlay-right {
-    transform: translateX(50px);
+    transform: translateX(20px);
 }
 
 .social-container {
@@ -738,9 +748,18 @@ aside#sidebar .side h1>span {
         width: 100%;
         margin-bottom: 5px;
     }
+    #container {
+        max-width: 90%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
     #container h1 {
-        font-size: 16px;
-        margin: 10px;
+        font-size: 14px;
+        /* margin: 10px; */
+        margin-left: auto;
+        margin-right: auto;
     }
     #container p,
     #container a,
